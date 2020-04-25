@@ -9,3 +9,11 @@ spring:
     console:
       enabled: true
       path: /h2-console
+
+#起動時にAWSスタックを自動検出する設定を無効化
+cloud:
+  aws:
+    stack:
+      auto: false
+    credentials:
+      instance-profile: false
