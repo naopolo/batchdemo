@@ -8,13 +8,13 @@ public class JobListener extends JobExecutionListenerSupport {
     @Override
     public void beforeJob(JobExecution jobExecution) {
         super.beforeJob(jobExecution);
-        System.out.println("ジョブ開始");
+        System.out.println("Start JOB");
     }
 
     @Override
     public void afterJob(JobExecution jobExecution) {
         super.afterJob(jobExecution);
-        System.out.println("ジョブ終了");
+        System.out.println("End JOB");
     }
 
 }
