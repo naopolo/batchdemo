@@ -3,3 +3,14 @@ spring:
     active:
       - dev
       #- prod
+
+#起動時にAWSスタックを自動検出する設定を無効化
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      auto: false
+      static: ap-northeast-1
+    credentials:
+      instance-profile: false
