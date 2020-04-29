@@ -1,0 +1,9 @@
+aws:
+  paramstore:
+    default-context: application
+    enabled: true
+    prefix: /config
+    name: batchdemo
+    profile-separator: '-'
+    #parameter storeに接続できなくてもAPをエラーにしない
+    fail-fast: false
